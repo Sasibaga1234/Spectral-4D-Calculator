@@ -1,0 +1,31 @@
+{
+  "name": "Gaba — 4D Algebra Symbolic CAS",
+  "short_name": "Gaba",
+  "id": "gaba-symbolic-cas",
+  "start_url": ".",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "description": "Scientific 4D Algebra Calculator with symbolic engine and offline capabilities."
+}
