@@ -8,6 +8,9 @@
     <!-- Manifest and PWA -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0f172a">
+    <!-- Android / Chrome / Brave PWA -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- iOS Safari PWA -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Gaba">
@@ -15,12 +18,16 @@
     
     <link rel="stylesheet" href="style.css">
     
-    <!-- Local Offline Libraries -->
-    <link rel="stylesheet" href="lib/katex.min.css">
-    <script defer src="lib/katex.min.js"></script>
-    <script defer src="lib/auto-render.min.js"></script>
-    <script src="lib/algebrite.min.js"></script>
-    <script src="lib/marked.min.js"></script>
+    <!-- KaTeX for math rendering (CDN primary, SW caches for offline) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Algebrite for symbolic math -->
+    <script src="https://cdn.jsdelivr.net/npm/algebrite@1.4.0/dist/algebrite.bundle-for-browser.min.js"></script>
+
+    <!-- Marked for markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <aside class="sidebar">
